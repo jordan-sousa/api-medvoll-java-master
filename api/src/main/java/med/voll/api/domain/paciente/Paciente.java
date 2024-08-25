@@ -29,6 +29,10 @@ public class Paciente {
 
     private Boolean ativo;
 
+    public Long getId() {
+        return id;
+    }
+
     public Paciente(DadosCadastroPaciente dados) {
         this.ativo = true;
         this.nome = dados.nome();
